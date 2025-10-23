@@ -6,8 +6,9 @@ import (
 )
 
 type Category struct {
-	CategoryID   uuid.UUID `json:"category_id" gorm:"type:uuid;default:uuid_generate_v4();primaryKey"`
-	CategoryName string    `json:"category_name"`
+	CategoryID   	uuid.UUID `json:"category_id" gorm:"type:uuid;default:uuid_generate_v4();primaryKey"`
+	CategoryName 	string    `json:"category_name"`
+	Description 	string    `json:"description"`
 }
 
 // Mapping to TableName
